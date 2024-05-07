@@ -1,0 +1,143 @@
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    z-index: 100;
+    background-color: white;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 8vh;
+    border: 1px black solid;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+nav a {
+    padding: 1rem;
+}
+
+main {
+
+    background-color: #E5F2FF;
+    /*height: 84vh;*/
+    width: 100vw;
+    padding-bottom: 16vh;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    z-index: 100;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 8vh;
+    border: 1px black solid;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.start {
+    padding: 1vh 15vw 0 15vw;
+    text-align: center;
+}
+
+#cards {
+    margin-top: 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    width: 200px;
+    padding: 0px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    border: 1px solid black;
+}
+
+.card-header {
+    border-bottom: 1px solid black;
+}
+
+.card-body {
+    padding-bottom: 10px;
+}
+
+.card-body button {
+    background-color: #E5F2FF;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.compare_plans_container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.compare_plans_container h2 {
+    text-align: center;
+}
+
+.compare_plans_container table {
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+}
+
+.compare_plans_container th {
+    border: 1px solid black;
+    width: 75px;
+    text-align: left;
+    padding: 10px;
+}
+
+.compare_plans_container td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column-reverse;
+    }
+    #cards {
+        flex-direction: column;
+    }
+    footer {
+        height: 20vh;
+        flex-direction: column;
+    }
+}
